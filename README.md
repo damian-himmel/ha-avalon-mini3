@@ -47,6 +47,11 @@ the miner. Reserve a fixed address for it in your router.
 The structure was inspired by [avalon_nano3s](https://github.com/jinx-22/avalon_nano3s) by
 @jinx-22.
 
+## Trademarks
+
+Avalon and the Avalon logo are trademarks of Canaan Inc. This project is not affiliated with or
+endorsed by Canaan.
+
 ## License
 
 [MIT](LICENSE)

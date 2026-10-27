@@ -48,6 +48,11 @@ Miners eingeben. Im Router eine feste Adresse für ihn reservieren.
 Der Aufbau ist angelehnt an [avalon_nano3s](https://github.com/jinx-22/avalon_nano3s) von
 @jinx-22.
 
+## Marken
+
+Avalon und das Avalon-Logo sind Marken von Canaan Inc. Dieses Projekt steht in keiner Verbindung zu
+Canaan und wird nicht von Canaan unterstützt.
+
 ## Lizenz
 
 [MIT](LICENSE)
