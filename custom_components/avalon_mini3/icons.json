@@ -1,0 +1,38 @@
+{
+  "entity": {
+    "select": {
+      "work_mode": {
+        "default": "mdi:cog-play-outline",
+        "state": {
+          "standby": "mdi:power-sleep",
+          "heater_eco": "mdi:radiator-disabled",
+          "heater_super": "mdi:radiator",
+          "mining": "mdi:pickaxe",
+          "night": "mdi:weather-night"
+        }
+      }
+    },
+    "sensor": {
+      "hashrate": { "default": "mdi:speedometer" },
+      "hashrate_average": { "default": "mdi:speedometer-medium" },
+      "fan_speed": { "default": "mdi:fan" },
+      "fan_duty": { "default": "mdi:fan-chevron-up" },
+      "pool": { "default": "mdi:server-network" },
+      "accepted_shares": { "default": "mdi:sticker-check-outline" },
+      "rejected_shares": { "default": "mdi:sticker-remove-outline" },
+      "best_share": { "default": "mdi:trophy-outline" },
+      "found_blocks": { "default": "mdi:cube-outline" },
+      "network_difficulty": { "default": "mdi:chart-line" },
+      "hardware_errors": { "default": "mdi:alert-circle-outline" },
+      "system_status": { "default": "mdi:information-outline" },
+      "pool_ping": { "default": "mdi:timer-outline" },
+      "chip_frequency": { "default": "mdi:sine-wave" }
+    },
+    "switch": {
+      "display": {
+        "default": "mdi:monitor",
+        "state": { "off": "mdi:monitor-off" }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Avalon Mini3 über die CGMiner-API verbinden.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        },
+        "data_description": {
+          "host": "IP-Adresse oder Hostname des Miners. Am besten im Router eine feste Adresse reservieren.",
+          "port": "Port der CGMiner-API, normalerweise 4028."
+        }
+      },
+      "reconfigure": {
+        "description": "Adresse des Miners ändern.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        },
+        "data_description": {
+          "host": "IP-Adresse oder Hostname des Miners.",
+          "port": "Port der CGMiner-API, normalerweise 4028."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_response": "Das Gerät antwortet, aber nicht wie ein Avalon-Miner.",
+      "unsupported_model": "Dieses Gerät ist kein Avalon Mini3."
+    },
+    "abort": {
+      "already_configured": "Gerät ist bereits eingerichtet",
+      "reconfigure_successful": "Neukonfiguration war erfolgreich",
+      "wrong_device": "Unter dieser Adresse läuft ein anderer Miner."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "pool_connected": { "name": "Pool verbunden" }
+    },
+    "select": {
+      "work_mode": {
+        "name": "Betriebsmodus",
+        "state": {
+          "standby": "Standby",
+          "heater_eco": "Heizung Eco",
+          "heater_super": "Heizung Super",
+          "mining": "Mining",
+          "night": "Nacht"
+        }
+      }
+    },
+    "sensor": {
+      "hashrate": { "name": "Hashrate" },
+      "hashrate_average": { "name": "Durchschnittliche Hashrate" },
+      "temperature_inlet": { "name": "Temperatur Eingang" },
+      "temperature_outlet": { "name": "Temperatur Ausgang" },
+      "temperature_hashboard": { "name": "Temperatur Hashboard" },
+      "temperature_chip_max": { "name": "Maximale Chiptemperatur" },
+      "temperature_chip_average": { "name": "Durchschnittliche Chiptemperatur" },
+      "fan_speed": { "name": "Lüfterdrehzahl" },
+      "fan_duty": { "name": "Lüfterleistung" },
+      "pool": { "name": "Pool" },
+      "accepted_shares": { "name": "Akzeptierte Shares" },
+      "rejected_shares": { "name": "Abgelehnte Shares" },
+      "best_share": { "name": "Bester Share" },
+      "found_blocks": { "name": "Gefundene Blöcke" },
+      "network_difficulty": { "name": "Netzwerk-Schwierigkeit" },
+      "hardware_errors": { "name": "Hardwarefehler" },
+      "uptime": { "name": "Laufzeit" },
+      "system_status": { "name": "Systemstatus" },
+      "pool_ping": { "name": "Pool-Ping" },
+      "chip_frequency": { "name": "Chipfrequenz" }
+    },
+    "switch": {
+      "display": { "name": "Display" }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "Der Miner hat den Befehl nicht angenommen: {error}"
+    }
+  }
+}

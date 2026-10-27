@@ -1,0 +1,28 @@
+{
+  "STATUS": [
+    {
+      "STATUS": "S",
+      "When": 1793118896,
+      "Code": 22,
+      "Msg": "CGMiner versions",
+      "Description": "cgminer 4.11.1"
+    }
+  ],
+  "VERSION": [
+    {
+      "CGMiner": "4.11.1",
+      "API": "3.7",
+      "PROD": "Avalon Mini3",
+      "MODEL": "Mini3",
+      "HWTYPE": "M_MM1v1_X1",
+      "SWTYPE": "MM319",
+      "LVERSION": "25022401_cb28ba7",
+      "BVERSION": "25022401_cb28ba7",
+      "CGVERSION": "25022401_cb28ba7",
+      "MCUVERSION": "Mini3_hb_v1.0",
+      "DNA": "0000000000000000",
+      "MAC": "0a1b2c3d4e5f"
+    }
+  ],
+  "id": 1
+}

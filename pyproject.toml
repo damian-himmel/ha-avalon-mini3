@@ -1,0 +1,24 @@
+[project]
+name = "ha-avalon-mini3"
+version = "0.1.0"
+description = "Home Assistant integration for the Canaan Avalon Mini3"
+requires-python = ">=3.14"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "RUF", "SIM", "UP", "W"]
+# Home Assistant declares entity defaults as mutable class attributes (_attr_*).
+ignore = ["RUF012"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+known-first-party = ["custom_components", "homeassistant"]
+combine-as-imports = true

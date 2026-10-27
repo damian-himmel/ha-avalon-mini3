@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Connect an Avalon Mini3 through its CGMiner API.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        },
+        "data_description": {
+          "host": "IP address or hostname of the miner. Reserve a fixed address in your router.",
+          "port": "Port of the CGMiner API, usually 4028."
+        }
+      },
+      "reconfigure": {
+        "description": "Change the address of the miner.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        },
+        "data_description": {
+          "host": "IP address or hostname of the miner.",
+          "port": "Port of the CGMiner API, usually 4028."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_response": "The device answered, but not like an Avalon miner.",
+      "unsupported_model": "This device is not an Avalon Mini3."
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reconfigure_successful": "Re-configuration was successful",
+      "wrong_device": "This address belongs to a different miner."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "pool_connected": { "name": "Pool connected" }
+    },
+    "select": {
+      "work_mode": {
+        "name": "Work mode",
+        "state": {
+          "standby": "Standby",
+          "heater_eco": "Heater eco",
+          "heater_super": "Heater super",
+          "mining": "Mining",
+          "night": "Night"
+        }
+      }
+    },
+    "sensor": {
+      "hashrate": { "name": "Hashrate" },
+      "hashrate_average": { "name": "Average hashrate" },
+      "temperature_inlet": { "name": "Inlet temperature" },
+      "temperature_outlet": { "name": "Outlet temperature" },
+      "temperature_hashboard": { "name": "Hashboard temperature" },
+      "temperature_chip_max": { "name": "Maximum chip temperature" },
+      "temperature_chip_average": { "name": "Average chip temperature" },
+      "fan_speed": { "name": "Fan speed" },
+      "fan_duty": { "name": "Fan duty" },
+      "pool": { "name": "Pool" },
+      "accepted_shares": { "name": "Accepted shares" },
+      "rejected_shares": { "name": "Rejected shares" },
+      "best_share": { "name": "Best share" },
+      "found_blocks": { "name": "Found blocks" },
+      "network_difficulty": { "name": "Network difficulty" },
+      "hardware_errors": { "name": "Hardware errors" },
+      "uptime": { "name": "Uptime" },
+      "system_status": { "name": "System status" },
+      "pool_ping": { "name": "Pool ping" },
+      "chip_frequency": { "name": "Chip frequency" }
+    },
+    "switch": {
+      "display": { "name": "Display" }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "The miner did not accept the command: {error}"
+    }
+  }
+}
